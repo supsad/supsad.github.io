@@ -1,0 +1,50 @@
+﻿<!DOCTYPE Html>
+<html lang='ru'>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+<link rel="alternate" hreflang="ru" href="alternateURL">
+<link rel="stylesheet" href="../../../css/dstyle.css" type="text/css" />
+<title>Slfstudy</title>
+<style>
+</style>
+</head>
+<body>
+<nav>
+<div></div>
+  <a href=".."><div style="font-size:14px">←</div></a>
+  <a href="../../../">Home</a>
+<a href="../../../devels.html">Devels</a>
+<div></div>
+</nav>
+<div style="margin:5px" id='1'>
+<h4 style="color:#2ff;text-align:center">Программирование:</h4>
+<b style="color:#6d6;text-align:center">Введение в основы C++ - подготовка</b><p>
+<div id='text' style='color:#0ff'></div>
+<script>
+ajax('');
+function ie7(){
+ try{return new XMLHttpRequest();}catch(e){
+ try{return new ActiveXObject("Mcxml2.XMLHTTP");}catch(e){
+ try{return new ActiveXObject("Microsoft.XMLHTTP");}catch(e){}}}}
+
+function ajax(url) {
+ var xmlhttp=ie7();
+ if(!xmlhttp){alert("No ajax!");}else{
+ try{
+  xmlhttp.onreadystatechange=function(){
+  if(xmlhttp.readyState==4){
+   xstat=xmlhttp.status;
+   if(xstat==200){
+    var q=xmlhttp.responseText;
+    if(q){
+$('text').innerHTML=q.replace(/[\n]/g,'<br>');
+    }
+   }}}
+ xmlhttp.open("GET",'../study.txt',true);
+ //xmlhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+ xmlhttp.send(url);
+ }catch(e){alert(e);}}}
+function $(q){
+return document.getElementById(q);}
+</script>

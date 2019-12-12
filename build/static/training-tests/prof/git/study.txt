@@ -1,0 +1,74 @@
+Git
+ — это система управления версиями.
+
+Репозиторий
+ — место, где хранятся и поддерживаются какие-либо данные.
+
+git config --global user.name "My Name" & git config --global user.email myEmail@example.com
+ — настройка git, нужно для работы с удаленными репозиториями.
+
+git init
+ — создать репозиторий.
+
+git status
+ — текущее состояние репозитория.
+
+git add hello.txt
+ — подготовить файл "hello.txt" для фиксации изменений.
+
+git add *
+ — подготовить все файлы, кроме тех, что прописаны в файле ".gitignore" (чтобы создать его в windows, переименовываем в ".gitignore.").
+
+git commit -m "Inicial commit"
+ — коммит (фиксация изменений). Вместо "Inicial commit" обязательно написать, что было сделано. Например: "Add readme.md, fixed bugs".
+
+git remote add origin https://github.com/YourNameInGit/Project.git
+ — сократить ссылку на удаленный репозиторий. Теперь за место нее можно просто писать "origin".
+
+git clone origin
+— клонирование репозитория.
+
+git pull origin master
+— запрос изменений с сервера.
+
+git push origin master
+ — отправка изменений на сервер. Перед этим может потребоваться сделать "git pull".
+
+git reset --merge
+ — отменить слияние.
+
+git branch
+— список всех веток.
+
+git branch iss55
+ — создание новой ветки.
+
+git checkout iss55
+— перейти к ветке "iss55".
+
+git checkout master & git merge iss55
+ — переход к ветке "master" и слияние с ней ветки "iss55".
+
+git branch -d iss55
+ — удаление ветки "iss55".
+
+git log
+ — отслеживание изменений, сделанных в коммитах.
+
+git show b10cc123
+ — посмотреть, что нового в коммите с названием "b10cc123..."
+
+git diff
+ — разница между двумя последними коммитами.
+
+git difftool
+ — эта команда запускает графический клиент, в котором наглядно сопоставляет все изменения.
+
+git mergetool
+ — графический интерфейс слияния.
+
+git checkout 09bd8cc1 hello.txt
+ — откатить файл "hello.txt", взяв его из коммита "09bd8cc1...".
+
+git commit --amend -m "Replace commit"
+ — исправление последнего коммита.

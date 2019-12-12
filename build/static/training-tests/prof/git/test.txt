@@ -1,0 +1,89 @@
+Создать репозиторий:
+ — git init
+ — git create
+ — git new
+ — git start
+
+Фиксация изменений:
+ — git commit -m "[text]"
+ — git commit -d "[text]"
+ — git fix -d "[text]"
+ — git save -m "[text]"
+
+Сократить ссылку на удаленный репозиторий:
+ — git remote add origin [url]
+ — git url add origin [url]
+ — git remote --add origin [url]
+ — git url --add origin [url]
+
+Запрос изменений с сервера:
+ — git pull origin master
+ — git clone origin master
+ — git load origin master
+ — git download origin master
+
+Отправка изменений на сервер:
+ — git push origin master
+ — git upload origin master
+ — git push master origin
+ — git push --upload master origin
+
+Список всех веток
+ — git branch
+ — git status
+ — git log
+ — git diff
+
+Создание новой ветки:
+ — git branch iss55
+ — git create iss55
+ — git new iss55
+ — git branch -d iss55
+
+Переход к ветке "master" и слияние с ней ветки "iss55":
+ — git checkout master & git merge iss55
+ — git merge master & git checkout iss55
+ — git select master & git branch iss55
+ — git select master & git merge iss55
+
+Удаление ветки "iss55":
+ — git branch -d iss55
+ — git branch -rm iss55
+ — git merge iss55
+ — git delete iss55
+
+Отслеживание изменений, сделанных в коммитах:
+ — git log
+ — git diff
+ — git commit --log
+ — git diff -c
+
+Посмотреть, что нового в коммите с названием "b10cc123...":
+ — git show b10cc123
+ — git info b10cc123
+ — git status b10cc123
+ — git commit --read b10cc123
+
+Разница между двумя последними коммитами:
+ — git diff
+ — git log -d 2
+ — git status -d 2
+ — git commit --log
+
+Эта команда запускает графический клиент, в котором наглядно сопоставляет все изменения:
+ — git difftool
+ — git log
+ — git divtool
+ — git log --gui
+
+Откатить файл "hello.txt", взяв его из коммита "09bd8cc1...":
+ — git checkout 09bd8cc1 hello.txt
+ — git diff 09bd8cc1 hello.txt
+ — git pull 09bd8cc1 hello.txt
+ — git checkout hello.txt 09bd8cc1
+
+Исправление последнего коммита:
+ — git commit --amend -m "Replace commit"
+ — git commit -d -m "Replace commit"
+ — git fix -d master "Replace commit"
+ — git branch --amend -m "Replace commit"

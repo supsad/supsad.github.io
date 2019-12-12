@@ -1,0 +1,32 @@
+{
+  "name": "xgitsx",
+  "version": "1.0.0",
+  "description": "studing site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XgitsX/XgitsX.github.io.git"
+  },
+  "author": "XgitsX, Anteva, supsad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/XgitsX/XgitsX.github.io/issues"
+  },
+  "homepage": "https://github.com/XgitsX/XgitsX.github.io#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-load-plugins": "^2.0.1",
+    "gulp-notify": "^3.2.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemap": "^1.0.1",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-tinypng": "^1.0.2"
+  }
+}
